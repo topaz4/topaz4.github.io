@@ -84,7 +84,12 @@ function chosenCommunity(communityName) {
 					// showing community name in box
 					var communitiesList = document.getElementById('communityName');
 						communitiesList.innerHTML = commName.val();
-						document.getElementById("nc").href +="?nc=" + commName.val();
+						document.getElementById("nc").innerHTML="<button class='btn trigger_popup_fricc2 l1-txt1 wsize1 days' data-clipboard-text='http://newtabis.me/Shareit/index.html?nc="+ commName.val() +"' style='color:white;' >Share it.</button>
+
+
+
+					<span class='m1-txt1 p-b-2 m-l-15'> </span>"
+				
 					// -- community name updating counter	
    			     	var commRef = firebase.database().ref('Communities/' + commName.val() +'/count');
 					commRef.transaction(function(commCount) {
