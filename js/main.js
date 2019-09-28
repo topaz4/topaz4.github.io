@@ -84,6 +84,7 @@ function chosenCommunity(communityName) {
 					// showing community name in box
 					var communitiesList = document.getElementById('communityName');
 						communitiesList.innerHTML = commName.val();
+						document.getElementById("nc").href +="?nc=" + commName.val();
 					// -- community name updating counter	
    			     	var commRef = firebase.database().ref('Communities/' + commName.val() +'/count');
 					commRef.transaction(function(commCount) {
