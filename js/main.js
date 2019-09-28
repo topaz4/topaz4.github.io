@@ -84,7 +84,7 @@ function chosenCommunity(communityName) {
 					// showing community name in box
 					var communitiesList = document.getElementById('communityName');
 						communitiesList.innerHTML = commName.val();
-						document.getElementById("nc").innerHTML="<button class='btn trigger_popup_fricc2 l1-txt1 wsize1 days' data-clipboard-text='http://newtabis.me/Shareit/index.html?nc="+ commName.val() +"' style='color:white;' >Share it.</button>
+						document.getElementById("nc").innerHTML="<button class='btn trigger_popup_fricc2 l1-txt1 wsize1 days' data-clipboard-text='http://newtabis.me/shareIt/index.html?nc="+ commName.val() +"' style='color:white;' >Share it.</button>
 
 
 
