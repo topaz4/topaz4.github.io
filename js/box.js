@@ -20,9 +20,6 @@ $(window).on('load',function () {
     });
 
 
-    $(".trigger_popup_fricc3").click(function(){
-       $('.hover_bkgr_fricc3').show();
-    });
     $('.hover_bkgr_fricc3').click(function(){
         $('.hover_bkgr_fricc3').hide();
     });
