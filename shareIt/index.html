@@ -60,9 +60,13 @@ http://www.tooplate.com/view/2087-kalay
 var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("cn");
-document.getElementById("cn").innerHTML=c;
-document.getElementById("cn2").innerHTML=c;
-document.getElementById("cn3").innerHTML=c;
+if (c!="") {
+     document.getElementById("cn").innerHTML=c;
+     document.getElementById("cn2").innerHTML=c;
+     document.getElementById("cn3").innerHTML=c;
+
+}
+
 </script>
 
 <!-- SERVICE SECTION -->
