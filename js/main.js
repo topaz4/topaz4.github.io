@@ -125,9 +125,13 @@ function chosenCommunity(communityName) {
 
 	    	
 		} else {
+	    $(window).on('load',function () {
 		   document.getElementById('newTabCounter').innerHTML = 'JOIN US <img src="./heartPink.png" style="width: 25px; height: 25px;margin-left: 15px;"> ';
 		   document.getElementById("newTabCounter").href="https://chrome.google.com/webstore/detail/tabfundme/naphccalgkhlohfgnjbjmnbibojlmbea";
        	   $('.hover_bkgr_fricc3').show();
+
+
+		});
  	
 		}
 	    		
