@@ -55,16 +55,16 @@ function chosenCommunity(communityName) {
         }
         //push itself
         
-    	var urlparameter = "none";
+    	var urlparameter;
     	if(window.location.href.indexOf("c") >-1) {
     		localCounter = getUrlVars()["c"];
     		document.getElementById('newTabCounter').innerHTML = localCounter +' <img src="./heartPink.png" style="width: 25px; height: 25px;margin-left: 15px;"> ';
     	}
     	if(window.location.href.indexOf("username") > -1){
     	    	urlparameter = getUrlVars()["username"];
-	       }
+	    
 
-	    if (urlparameter != "none") {
+	    
 	    	var usersRef = firebase.database().ref('users/'+ urlparameter);
 	    	console.log("username parameters" + urlparameter);
 	    	firebase.database().ref().child("users/" + urlparameter + '/community').on("value", function(snapshot) {
@@ -125,7 +125,7 @@ function chosenCommunity(communityName) {
 
 	    	
 		} else {
-		   document.getElementById('newTabCounter').innerHTML = 'JOIN FREE <img src="./heartPink.png" style="width: 25px; height: 25px;margin-left: 15px;"> ';
+		   document.getElementById('newTabCounter').innerHTML = 'JOIN US <img src="./heartPink.png" style="width: 25px; height: 25px;margin-left: 15px;"> ';
 		   document.getElementById("newTabCounter").href="https://chrome.google.com/webstore/detail/tabfundme/naphccalgkhlohfgnjbjmnbibojlmbea";
        	   $('.hover_bkgr_fricc3').show();
  	
