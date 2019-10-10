@@ -220,7 +220,7 @@ Primary use:
     height: auto;
     max-width: 551px;
     min-height: 100px;
-    max-height: 700px;
+    max-height: 850px;
 
     vertical-align: middle;
     width: 60%;
@@ -237,7 +237,7 @@ Primary use:
     font-family: arial;
     font-weight: bold;
     position: absolute;
-    top: -100px;
+    top: -200px;
     right: -20px;
     font-size: 25px;
     line-height: 25px;
